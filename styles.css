@@ -1,0 +1,151 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.heading {
+  font-size: 30px;
+  line-height: 36px;
+  color: #445161;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 24px;
+  color: #333;
+}
+
+.header {
+  background-color: #445161;
+}
+
+.header__container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.header__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__title {
+  font-size: 60px;
+  line-height: 69px;
+  color: #FFF;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-left: 50px;
+  margin-bottom: 40px;
+}
+
+.header__list {
+  list-style-image: url(images/tick.svg);
+  list-style-position: inside;
+  margin-top: 40px;
+  margin-left: 50px;
+  margin-bottom: 19px;
+}
+
+.header__list-text {
+  color: #FFF;
+}
+
+.header__list-text:not(:last-child) {
+  padding-bottom: 10px;
+}
+
+.header__img {
+  width: 472px;
+  margin-top: 25px;
+  margin-right: 50px;
+  margin-bottom: 33px;
+}
+
+.about-product {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.about-product .heading {
+  margin-bottom: 17px;
+}
+
+.about-product .text {
+  width: 546px;
+}
+
+.about-product .text:not(:last-child) {
+  margin-bottom: 11px;
+}
+
+.about-product__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 45px;
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-bottom: 50px;
+}
+
+.about-product__info {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  max-width: 546px;
+}
+
+.about-product__img {
+  width: 430px;
+}
+
+.description {
+  width: 1140px;
+  margin: 0 auto;
+  background-color: #F5F5F5;
+  padding-top: 25px;
+}
+
+.description .heading {
+  text-align: center;
+  margin-bottom: 15px;
+  padding: 0;
+}
+
+.description__paragraphs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.description .text {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: right;
+}
+
+.description .text:not(:last-child) {
+  margin-bottom: 26px;
+}
+
+.description .text::before {
+  content: url(images/plus_icon.svg);
+  margin-right: 17px;
+  float: left;
+}
+/*# sourceMappingURL=styles.css.map */
