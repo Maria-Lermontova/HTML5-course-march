@@ -363,6 +363,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   justify-self: center;
+  padding-bottom: 48px;
 }
 
 .footer__form {
@@ -373,5 +374,13 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-left: 200px;
+}
+
+.footer__contacts__item {
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFF;
+  margin-right: 200px;
 }
 /*# sourceMappingURL=styles.css.map */
