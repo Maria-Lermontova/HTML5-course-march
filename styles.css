@@ -236,7 +236,7 @@ body {
 .reviews .text {
   background-color: #EBEBEB;
   width: 95%;
-  padding: 15px 10px 10px 15px;
+  padding: 15px 6px 10px 15px;
   position: relative;
 }
 
@@ -363,6 +363,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   justify-self: center;
+  padding-bottom: 48px;
 }
 
 .footer__form {
@@ -373,5 +374,13 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-left: 200px;
+}
+
+.footer__contacts__item {
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFF;
+  margin-right: 200px;
 }
 /*# sourceMappingURL=styles.css.map */
