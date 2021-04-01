@@ -1,0 +1,280 @@
+@font-face {
+  font-family: Montserrat;
+  src: url("fonts/montserrat-medium-webfont.woff2") format("woff2"), url("fonts/montserrat-medium-webfont.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url("fonts/montserrat-regular-webfont.woff2") format("woff2"), url("fonts/montserrat-regular-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url("fonts/montserrat-light-webfont.woff2") format("woff2"), url("fonts/montserrat-light-webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Raleway;
+  src: url("fonts/raleway-variablefont_wght-webfont.woff2") format("woff2"), url("fonts/raleway-variablefont_wght-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Raleway;
+  src: url("fonts/raleway-medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Raleway;
+  src: url("fonts/raleway-semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("roboto-regular-webfont.woff2") format("woff2"), url("roboto-regular-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: Montserrat, Arial, sans-serif;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.header {
+  background: #434240 url(images/bg_header.jpg) no-repeat center center/cover;
+  color: #FFF;
+  padding: 40px 0 50px;
+  margin-bottom: 93px;
+}
+
+.header__navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 315px;
+}
+
+.header__logo {
+  fill: #FFF;
+}
+
+.header__logo:hover {
+  fill: #c7b299;
+}
+
+.header__navigation-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__navigation-link {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 300;
+}
+
+.header__navigation-link:not(:last-of-type) {
+  margin-right: 20px;
+}
+
+.header__navigation-link:hover {
+  color: #c7b299;
+}
+
+.header__navigation-link_icon {
+  fill: #FFF;
+}
+
+.header__navigation-link_icon:hover {
+  fill: #c7b299;
+}
+
+.header__navigation-link_icon-margin {
+  margin-right: 50px !important;
+}
+
+.header__slider {
+  position: relative;
+}
+
+.header__slide {
+  width: 570px;
+  margin: 0 auto 310px;
+  text-align: center;
+}
+
+.header__slide-nav {
+  border: none;
+  background-color: transparent;
+  fill: #FFF;
+  cursor: pointer;
+  position: absolute;
+  top: 45px;
+}
+
+.header__slide-nav:focus {
+  outline: none;
+}
+
+.header__slide-nav_prev {
+  left: 10%;
+}
+
+.header__slide-nav_next {
+  right: 10%;
+}
+
+.header__slide-title {
+  font-family: Raleway, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  margin-bottom: 5px;
+}
+
+.header__slide-subtitle {
+  font-family: Raleway, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 52px;
+  margin-bottom: 5px;
+}
+
+.header__slide-info {
+  margin-bottom: 40px;
+  line-height: 1.2;
+}
+
+.header__slide-button {
+  font-family: Roboto;
+  color: #FFF;
+  text-transform: uppercase;
+  background-color: #988574;
+  border-radius: 3px;
+  border: none;
+  padding: 20px 40px;
+}
+
+.header__pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header__pagination-item {
+  border: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.header__pagination-item:not(:last-of-type) {
+  margin-right: 10px;
+}
+
+.header__pagination-item:hover {
+  border: 1px solid #D3C1AD;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: transparent;
+}
+
+.services__item {
+  fill: #555555;
+  max-width: 20%;
+  text-align: center;
+  display: inline-block;
+}
+
+.services__item:nth-child(2) {
+  fill: #C7B299;
+}
+
+.services__item:not(:last-of-type) {
+  margin-right: 30px;
+}
+
+.services__item-image {
+  margin-bottom: 20px;
+}
+
+.services__item-text {
+  text-align: center;
+  font-weight: 300;
+  line-height: 1.3;
+  margin-bottom: 30px;
+}
+
+.services__item-rectangle {
+  fill: #F1EEE9;
+  margin-bottom: 87px;
+}
+
+.services__item-rectangle-dark {
+  fill: #C7B199;
+}
+
+.realisation {
+  background-color: #FBFAF8;
+}
+
+.realisation__wrapper {
+  background-image: url(images/browsers.jpg);
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position-x: center;
+  background-position-y: bottom;
+}
+
+.realisation__heading {
+  font-family: Raleway, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #555555;
+  padding-top: 80px;
+}
+
+.realisation__info {
+  margin: 0 auto;
+  padding-bottom: 300px;
+  font-weight: 300;
+  color: #8C8C8C;
+  text-align: center;
+  max-width: 770px;
+}
+/*# sourceMappingURL=styles.css.map */
