@@ -427,14 +427,56 @@ body {
 }
 
 .projects__item {
-  width: 30%;
+  width: 33%;
   max-width: 370px;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.projects__item:not(:nth-child(3n)) {
   margin-right: 30px;
+}
+
+.projects__item:hover {
+  background-color: #352F2D;
+  width: 100%;
+  height: 330px;
+}
+
+.projects__item:hover .projects__item-title {
+  color: #C7B299;
+}
+
+.projects__item:hover .projects__item-text {
+  color: #FFF;
+}
+
+.projects__item::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  width: 100%;
+  height: 237px;
+}
+
+.projects__item:hover::after {
+  opacity: 1;
+}
+
+.projects__item:nth-child(-n+3) {
+  margin-bottom: 69px;
 }
 
 .projects__item-image {
   margin-bottom: 25px;
   position: relative;
+  max-width: 370px;
 }
 
 .projects__item-title {
@@ -443,6 +485,7 @@ body {
   font-weight: 500;
   font-size: 20px;
   margin-bottom: 8px;
+  margin-left: 23px;
   position: relative;
 }
 
@@ -651,17 +694,47 @@ body {
   margin-bottom: 54px;
 }
 
+.recent-posts__card-image {
+  margin-bottom: 30px;
+}
+
 .recent-posts__card {
   max-width: 379px;
   border: 1px solid #B3B3B3;
+  position: relative;
 }
 
 .recent-posts__card:not(:last-of-type) {
   margin-right: 85px;
 }
 
-.recent-posts__card-image {
-  margin-bottom: 30px;
+.recent-posts__card:hover {
+  background-color: #352F2D;
+}
+
+.recent-posts__card:hover .recent-posts__card-title {
+  color: #C7B299;
+}
+
+.recent-posts__card:hover .recent-posts__card-text {
+  color: #FFF;
+}
+
+.recent-posts__card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  width: 100%;
+  height: 220px;
+}
+
+.recent-posts__card:hover::after {
+  opacity: 1;
 }
 
 .recent-posts__card-title {
@@ -704,6 +777,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 38px;
 }
 
 .recent-posts__pagination-item {
@@ -712,11 +786,223 @@ body {
   display: flex;
   -ms-flex-item-align: center;
       align-self: center;
+  fill: #D1D1D1;
   border: none;
   background: transparent;
 }
 
+.recent-posts__pagination-item:hover {
+  fill: #C7B299;
+}
+
 .recent-posts__pagination-item:not(:last-of-type) {
   margin-right: 18px;
+}
+
+.partners {
+  background-image: url(images/bg_partners.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.partners .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: none;
+}
+
+.partners__icon {
+  margin-top: 140px;
+  margin-bottom: 140px;
+}
+
+.partners__icon:not(:last-of-type) {
+  margin-right: 75px;
+}
+
+.footer {
+  background: #191919;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-top: 100px;
+  padding-bottom: 120px;
+}
+
+.footer__item {
+  max-width: 270px;
+}
+
+.footer__item:not(:last-of-type) {
+  margin-right: 50px;
+}
+
+.footer__item-logo {
+  margin-bottom: 18px;
+}
+
+.footer__heading {
+  font-family: Raleway, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 23px;
+  color: #FFF;
+}
+
+.footer__item-text {
+  color: #555555;
+  margin-bottom: 18px;
+  line-height: 1.2;
+}
+
+.footer__item-posts:hover .footer__item-posts-time {
+  color: #FFF;
+}
+
+.footer__item-posts:hover .footer__item-posts-text {
+  color: #C7B299;
+}
+
+.footer__item-posts-time {
+  color: #363636;
+  margin-bottom: 6px;
+}
+
+.footer__item-posts-text {
+  color: #555555;
+  margin-bottom: 29px;
+}
+
+.footer__item-posts-text::after {
+  margin: 0 auto;
+  content: '';
+  display: block;
+  width: 270px;
+  height: 1px;
+  background-color: #242424;
+  margin-top: 16px;
+}
+
+.footer__item-twitter-text {
+  color: #555555;
+  line-height: 1.2;
+  margin-bottom: 6px;
+}
+
+.footer__item-twitter-time {
+  color: #363636;
+  margin-bottom: 29px;
+}
+
+.footer__item-twitter-time::after {
+  margin: 0 auto;
+  content: '';
+  display: block;
+  width: 270px;
+  height: 1px;
+  background-color: #242424;
+  margin-top: 16px;
+}
+
+.footer__item-twitter:hover .footer__item-twitter-time {
+  color: #FFF;
+}
+
+.footer__item-twitter:hover .footer__item-twitter-text {
+  color: #C7B299;
+}
+
+.footer__item-read-more {
+  position: relative;
+  color: #D1D1D1;
+}
+
+.footer__item-read-more::after {
+  content: '';
+  position: absolute;
+  left: 100px;
+  top: 2px;
+  border: 5px solid transparent;
+  border-left: 5px solid #D1D1D1;
+}
+
+.footer__item-pics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer__image {
+  max-width: 45%;
+}
+
+.footer__image:nth-child(odd) {
+  margin-right: 8px;
+}
+
+.footer__image:nth-child(-n+2) {
+  margin-bottom: 8px;
+}
+
+.footer .copyrights {
+  background: #101010;
+}
+
+.footer .copyrights .container {
+  margin: 0;
+  padding-top: 58px;
+  padding-bottom: 41px;
+}
+
+.footer .copyrights__text {
+  font-size: 13px;
+  color: #555555;
+  position: relative;
+}
+
+.footer .copyrights__text:not(:last-of-type) {
+  margin-right: 25px;
+}
+
+.footer .copyrights__text:not(:first-of-type)::before {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 16px;
+  background-color: #1A1A1A;
+  position: absolute;
+  top: 0;
+  left: -11px;
+  height: 100%;
+}
+
+.footer .copyrights__text:hover {
+  color: #BAA78F;
 }
 /*# sourceMappingURL=styles.css.map */
